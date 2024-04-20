@@ -29,7 +29,10 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-
+    'providers' => [
+        // Other service providers
+        Jenssegers\Date\DateServiceProvider::class,
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode

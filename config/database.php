@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Str;
 
+
 return [
 
     /*
@@ -14,7 +15,8 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-
+    'charset' => 'utf8mb4',
+    'collation' => 'utf8mb4_unicode_ci',
     'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
@@ -32,6 +34,9 @@ return [
     | choice installed on your machine before you begin development.
     |
     */
+    
+    'disable-tls' => true,
+
 
     'connections' => [
 
@@ -107,7 +112,9 @@ return [
     */
 
     'migrations' => 'migrations',
-
+    'charset' => 'utf8mb4',
+    'collation' => 'utf8mb4_unicode_ci',
+    
     /*
     |--------------------------------------------------------------------------
     | Redis Databases
